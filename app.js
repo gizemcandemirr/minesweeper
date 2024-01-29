@@ -111,6 +111,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const newSquare = document.getElementById(newId);
                 click(newSquare);
             }
+            if (currentId < 88 && !isRightEdge) {
+                const newId = parseInt(currentId) + 1 + width;
+                const newSquare = document.getElementById(newId);
+                click(newSquare);
+            }
+            if (currentId < 89) {
+                const newId = parseInt(currentId) + width;
+                const newSquare = document.getElementById(newId);
+                click(newSquare);
+            }
 
         })
     }
